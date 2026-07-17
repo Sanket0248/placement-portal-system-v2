@@ -1,0 +1,28 @@
+# Secrets — never commit
+.env
+backend/.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Database & instance
+backend/instance/*.db
+*.sqlite3
+
+# Celery
+celerybeat-schedule*
+*.bak
+
+# Uploads (keep the folder, ignore generated files)
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/uploads/export_*.csv
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
